@@ -1,0 +1,57 @@
+@import "colors";
+
+.skillsContainer {
+  background-color: $pink;
+  padding: 70px 20px;
+  text-align: center;
+  color: $white;
+  height: 70vh;
+
+  h2 {
+    font-family: $heading;
+    font-size: 54px;
+    margin-bottom: 50px;
+  }
+
+  .skillsSection {
+    margin-bottom: 50px;
+    h3 {
+      font-family: $heading;
+      font-size: 36px;
+      letter-spacing: 3px;
+      margin-bottom: 30px;
+      color: $yellow;
+    }
+
+    .skillsList {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+
+      .skillItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 15px 25px;
+        font-family: $text;
+        font-size: 20px;
+
+        .skillIcon {
+          font-size: 45px;
+          margin-bottom: 15px;
+          color: $yellow;
+          transition: transform 0.3s ease;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+
+        span {
+          color: $white;
+        }
+      }
+    }
+  }
+}

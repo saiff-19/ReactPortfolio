@@ -1,0 +1,96 @@
+@import "colors";
+
+.contactContainer {
+  background-color: $white;
+  padding: 80px 20px;
+  color: $pink;
+  text-align: center;
+  min-height: 82.5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 10px solid $pink;
+  border-radius: 0 0 50% 50%;
+  p {
+    color: $brown;
+    font-size: 20px;
+  }
+
+  h2 {
+    font-family: $heading;
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: $pink;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .contactForm {
+    max-width: 500px;
+    width: 100%;
+    background-color: $pink;
+    padding: 30px 50px 30px 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    color: $white;
+    margin: 0 auto;
+
+    .formGroup {
+      margin-bottom: 25px;
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-family: $text;
+        font-size: 16px;
+        color: $white;
+        font-weight: 500;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        font-family: $text;
+        font-size: 16px;
+        border: 1px solid $white;
+        border-radius: 5px;
+        background-color: $white;
+        color: $pink;
+        outline: none;
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        &::placeholder {
+          color: darken($pink, 30%);
+        }
+      }
+
+      textarea {
+        resize: vertical;
+      }
+    }
+
+    .submitButton {
+      margin-left: 12px;
+      display: block;
+      width: 100%;
+      padding: 14px;
+      font-family: $text;
+      font-size: 18px;
+      background-color: $yellow;
+      color: $brown;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      font-weight: bold;
+
+      &:hover {
+        background-color: darken($yellow, 10%);
+        transform: translateY(-3px);
+      }
+    }
+  }
+}

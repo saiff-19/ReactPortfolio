@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  h2 {
+    letter-spacing: 3px;
+    cursor: default;
+  }
+  h3 {
+    cursor: default;
+  }
+  h4 {
+    cursor: default;
+  }
+  h5 {
+    cursor: default;
+  }
+  p {
+    cursor: default;
+  }
+  button {
+    cursor: pointer;
+  }
+}

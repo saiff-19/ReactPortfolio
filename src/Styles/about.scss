@@ -1,0 +1,52 @@
+@import "colors";
+
+.aboutContainer {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 10px;
+  align-items: center;
+  height: 70vh;
+  background-color: $yellow;
+  padding: 40px;
+  color: $brown;
+
+  h2 {
+    grid-column: span 2;
+    font-family: $heading;
+    font-size: 54px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: $pink;
+    text-decoration: underline;
+  }
+
+  .aboutText {
+    font-family: $text;
+    font-size: 24px;
+    line-height: 1.35;
+    color: $brown;
+    max-width: 80%;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .aboutImg {
+    max-width: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 50%;
+    border: 10px solid rgb(255, 196, 0);
+    margin: 5px 0px 0px 50px;
+
+    img {
+      padding: 0;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+}
